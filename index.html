@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <h1>Descubra o seu IMC</h1>
+    </header>
+
+    <main id="corpo-principal">
+        <section id="secao1">
+            <h2>O que é IMC?</h2>
+            <p>
+                Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal, conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal. Ele aponta se o peso está adequado ou se está abaixo ou acima do peso.
+            </p>
+            <p>
+                Para fazer o cálculo, basta dividir o peso pela altura ao quadrado. O número final representa o quanto a pessoa tem de massa muscular + massa de gordura + massa óssea. Com o resultado, o próximo passo é interpretá-lo.
+            </p>
+            <div id="classificacao">
+                <h3>Classificação do IMC</h3>
+                <p>
+                    Menor que 16 - Magreza grave<br>
+                    16 a menor que 17 - Magreza moderada<br>
+                    17 a menor que 18,5 - Magreza leve<br>
+                    18,5 a menor que 25 - Saudável<br>
+                    25 a menor que 30 - Sobrepeso<br>
+                    30 a menor que 35 - Obesidade Grau I<br>
+                    35 a menor que 40 - Obesidade Grau II (considerada severa)<br>
+                    Maior que 40 - Obesidade Grau III (considerada mórbida)<br>
+                </p>
+            </div>
+        </section>
+        <section id="secao2">
+            <h2>Calcule agora!</h2>
+            <div id="container-calc">
+                <h3>IMC</h3>
+                <div id="calculadora">
+                    <span>Altura (ex: 1,65)</span>
+                    <input type="number" id="campoMetros" placeholder="Metros">
+                    <span>Peso (ex: 50,00)</span>
+                    <input type="number" id="campoQuilos" placeholder="Quilos">
+                    <div id="botoes">
+                        <button onclick="imc()">Calcular</button>
+                        <button onclick="limpar()">Limpar</button>
+                    </div>
+                </div>
+            </div>
+            <p class="resultadoImc" style="margin-bottom: 5px;"></p>
+            <p class="resultado"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
